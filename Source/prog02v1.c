@@ -63,7 +63,7 @@ bool argument_check(char* argv[], int num_args){
     sscanf(argv[1], "%d", &f1);
     sscanf(argv[2], "%d", &f2);
     sscanf(argv[3], "%d", &count);
-    if (num_args > 4 || num_args < 3 || f1 > f2 || f1 < 0 || f2 < 0 || count < 0 ){
+    if (num_args > 4 || num_args < 3 || f1 > f2 || f1 <= 0 || f2 <= 0 || count <= 0 ){
         printf("usage: %s F1 F2 n, with F2>F1>0 and n>0 all integers.\n", argv[0]);
         return true;
     }
