@@ -35,7 +35,7 @@ int main(int argc, char* argv[]) {
 }
 
 void fill_sequence(int *sequence, int count){
-    //method that uses fib formual and places answer in sequence array
+    //method that uses fib formula and places answer in sequence array
     for(int i = 2; i < count; i++){
         sequence[i] = sequence[i-1] + sequence[i-2];
 

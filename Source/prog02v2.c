@@ -133,7 +133,7 @@ int remove_dupes(int *total_sequence, int count){
 
         // traverse through total array starting at whatever index
         // the first loop is on, so it does not check an index
-        // that has alread been checked
+        // that has already been checked
         for(int j = i + 1; j < count; j++){
 
             // check if the numbers are the same
